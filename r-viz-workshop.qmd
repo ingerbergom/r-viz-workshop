@@ -13,7 +13,6 @@ execute:
 
 ```{r include=FALSE}
 library(tidyr)
-
 ```
 
 ## Setup
