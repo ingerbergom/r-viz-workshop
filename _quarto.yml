@@ -1,0 +1,9 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "S057 Workshop: Data Vizualization with R"
+format:
+  html:
+    theme: cosmo
+    css: styles.css
