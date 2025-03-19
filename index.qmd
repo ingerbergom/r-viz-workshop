@@ -315,14 +315,14 @@ Create a **scatterplot** that shows the relationship between school size and % o
 
 ## Additional Resources
 
-- **Learning ggplot2.** There are lots of materials for learning ggplot2. Here are a few:
+- **Learning ggplot2.** There are lots of materials online for learning ggplot2. Here are a few resources:
   
   - [Introduction to ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html)
   
-  - [ggplto2 book by Hadley Wickham](https://ggplot2-book.org/)
+  - [ggplot2 book by Hadley Wickham](https://ggplot2-book.org/)
   
   - [ggplot2 documentation](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf)
 
-- **Making pretty tables.** My favorites R packages for making tables are [`gt`](https://gt.rstudio.com) and [`tinytable`](https://vincentarelbundock.github.io/tinytable/). [This page](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r) lists various other packages.
+- **Making pretty tables.** My favorite R packages for making tables are [`gt`](https://gt.rstudio.com) and [`tinytable`](https://vincentarelbundock.github.io/tinytable/). [This page](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r) lists various other packages.
 
-- **Making charts and tables interactive.** One way to make interactive charts and tables is with HTML widgets for R. A few are featured in [this post](https://www.airweb.org/resources/publications/eair-newsletter/tech-tips/2022/10/28/using-html-widgets-for-r-to-create-interactive-reports) I wrote a while back.
+- **Making charts and tables interactive.** One way to make interactive charts and tables in R is with HTML widgets. A few are featured in [this post](https://www.airweb.org/resources/publications/eair-newsletter/tech-tips/2022/10/28/using-html-widgets-for-r-to-create-interactive-reports) I wrote a while back.
