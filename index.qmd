@@ -68,7 +68,7 @@ In general, making graphs/figures in R is a matter of becoming familiar with the
 A line graph is really useful when you have data with a time component, or in other words, you are measuring the same things across different times. You can also use this to compare differences across time between different units. If there is a time component (years, months, etc.) try a line graph.
 
 ::: {.callout-note title="Example Research Question"}
-How has high school enrollment changed over time at 3 different sites (Cambridge Rindge and Latin, Boston Latin Academy, Brighton High School)?
+How has high school enrollment changed over time at three different sites: Cambridge Rindge and Latin, Boston Latin Academy, and Brighton High School?
 :::
 
 First,create a subset of our dataset that includes only the three schools relevant to our research question.
