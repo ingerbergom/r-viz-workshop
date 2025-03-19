@@ -124,6 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">Histograms</a></li>
   <li><a href="#scatterplots" id="toc-scatterplots" class="nav-link" data-scroll-target="#scatterplots">Scatterplots</a></li>
   <li><a href="#practice-on-your-own" id="toc-practice-on-your-own" class="nav-link" data-scroll-target="#practice-on-your-own">Practice on Your Own</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -282,7 +283,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>When you use scale_color_discrete(labels = c()), R will not know how to match your labels to the data; essentially we are just “overriding” the default labels R will use. You will need to verify manually that your labels match the actual data.</p>
+<p>When you use <code>scale_color_discrete(labels = c())</code>, R will not know how to match your labels to the data; essentially we are just “overriding” the default labels R will use. You will need to verify manually that your labels match the actual data.</p>
 </div>
 </div>
 </section>
@@ -564,6 +565,19 @@ Example Research Question
 <p>Create a <strong>bar graph</strong> that shows the enrollment proportion by race for Cambridge High School and Boston Latin Academy.</p>
 <p>Create a <strong>histogram</strong> that shows the distribution of the proportion of students that are Black in Boston public schools in 2017.</p>
 <p>Create a <strong>scatterplot</strong> that shows the relationship between school size and % of students on free lunch.</p>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<ul>
+<li><p><strong>Learning ggplot2.</strong> There are lots of materials for learning ggplot2. Here are a few:</p>
+<ul>
+<li><p><a href="https://ggplot2.tidyverse.org/articles/ggplot2.html">Introduction to ggplot2</a></p></li>
+<li><p><a href="https://ggplot2-book.org/">ggplto2 book by Hadley Wickham</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf">ggplot2 documentation</a></p></li>
+</ul></li>
+<li><p><strong>Making pretty tables.</strong> My favorites R packages for making tables are <a href="https://gt.rstudio.com"><code>gt</code></a> and <a href="https://vincentarelbundock.github.io/tinytable/"><code>tinytable</code></a>. <a href="https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r">This page</a> lists various other packages.</p></li>
+<li><p><strong>Making charts and tables interactive.</strong> One way to make interactive charts and tables is with HTML widgets for R. A few are featured in <a href="https://www.airweb.org/resources/publications/eair-newsletter/tech-tips/2022/10/28/using-html-widgets-for-r-to-create-interactive-reports">this post</a> I wrote a while back.</p></li>
+</ul>
 
 
 </section>

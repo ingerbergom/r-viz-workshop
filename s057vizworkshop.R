@@ -13,7 +13,7 @@ rm(list=ls()) # clears the workspace
 library (dplyr) # library the packages we need
 library (ggplot2)
 
-setwd("/Users/elizabeth/Desktop/S057") # set the working directory 
+setwd("/Documents/S057") # set the working directory 
 dat <- read.csv("s057workshopdata.csv") # load the data
 
 ####################
@@ -140,7 +140,7 @@ ggplot(dat_bar, aes(x = race, y = average_enrollment, fill = district)) +
 
 # Example Research Question: How does school size vary in BPS? 
 
-dat_hist <- dat %>% filter(district == 'boston') # create a subset of our dataset that includes only the schools in boston
+dat_hist <- dat %>% filter(district == 'boston') # 
 
 ###### PLOT = DATA + AESTHETICS + GEOMETRY ######
 ggplot(dat_hist, aes(x = enrollment)) +
