@@ -15,6 +15,12 @@ execute:
 library(tidyr)
 ```
 
+## Workshop Materials
+
+Download the workshop data [here](https://bit.ly/s057-data){target="_blank"}.
+
+Download the R script file [here](https://drive.google.com/file/d/1T0auTh-IYuhlAQ7eUzdKHyTzPbiUzlxe/view?usp=share_link){target="_blank"}.
+
 ## Setup
 
 **Clear the R environment.** This removes all objects stored in your global environment.
@@ -71,7 +77,7 @@ A line graph is really useful when you have data with a time component, or in ot
 How has high school enrollment changed over time at three different sites: Cambridge Rindge and Latin, Boston Latin Academy, and Brighton High School?
 :::
 
-First,create a subset of our dataset that includes only the three schools relevant to our research question.
+First, create a subset of our dataset that includes only the three schools relevant to our research question.
 
 ```{r}
 dat_line <- dat %>% 
@@ -129,7 +135,7 @@ dat_bar <- dat %>%
 ```
 
 ::: callout-warning
-When we run this code, get an error that we have a non-numeric argument. This is likely because R thinks our race counts by school are not numbers.
+When we run this code, we get an error that we have a non-numeric argument. This is likely because R thinks our race counts by school are not numbers.
 :::
 
 To fix the error, let's tell R to change the "class" (i.e., type of variable) to be numeric.
@@ -205,7 +211,7 @@ ggplot(dat_bar, aes(x = race, y = average_enrollment, fill = district)) +
 An important stylistic point with bar graphs is that you always want to start with a baseline (the beginning of your y-axis) at zero. Doing otherwise can lead to people misinterpreting your data.
 :::
 
-Let's finish by setting the y-axis baseline to start at zero by specifying the range for y:
+Let’s finish by setting the y-axis scale with [`scale_y_continuous`](https://ggplot2.tidyverse.org/reference/scale_continuous.html){target="_blank"} and removing the padding by using the `expand` argument:
 
 ```{r}
 ggplot(dat_bar, aes(x = race, y = average_enrollment, fill = district)) +
@@ -219,7 +225,7 @@ ggplot(dat_bar, aes(x = race, y = average_enrollment, fill = district)) +
                               "avg_pct_hispanic" = "Hispanic",
                               "avg_pct_asian" = "Asian",
                               "avg_pct_white" = "White")) +
-  ylim(0, 0.5) # set range for y
+  scale_y_continuous(limits = c(0, 0.5), expand = c(0, 0)) # Start y-axis at 0 with no extra space
 ```
 
 ## Histograms
@@ -315,14 +321,14 @@ Create a **scatterplot** that shows the relationship between school size and % o
 
 ## Additional Resources
 
-- **Learning ggplot2.** There are lots of materials online for learning ggplot2. Here are a few resources:
-  
-  - [Introduction to ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html)
-  
-  - [ggplot2 book by Hadley Wickham](https://ggplot2-book.org/)
-  
-  - [ggplot2 documentation](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf)
+-   **Learning ggplot2.** There are lots of resources online for learning ggplot2. Here are a few:
 
-- **Making pretty tables.** My favorite R packages for making tables are [`gt`](https://gt.rstudio.com) and [`tinytable`](https://vincentarelbundock.github.io/tinytable/). [This page](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r) lists various other packages.
+    -   [Introduction to ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html)
 
-- **Making charts and tables interactive.** One way to make interactive charts and tables in R is with HTML widgets. A few are featured in [this post](https://www.airweb.org/resources/publications/eair-newsletter/tech-tips/2022/10/28/using-html-widgets-for-r-to-create-interactive-reports) I wrote a while back.
+    -   [ggplot2 book by Hadley Wickham](https://ggplot2-book.org/)
+
+    -   [ggplot2 documentation](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf)
+
+-   **Making pretty tables.** My favorite R packages for making tables are [`gt`](https://gt.rstudio.com) and [`tinytable`](https://vincentarelbundock.github.io/tinytable/). [This page](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r) lists various other packages.
+
+-   **Making charts and tables interactive.** One way to make interactive charts and tables in R is with HTML widgets. A few are featured in [this post](https://www.airweb.org/resources/publications/eair-newsletter/tech-tips/2022/10/28/using-html-widgets-for-r-to-create-interactive-reports) I wrote a while back.
